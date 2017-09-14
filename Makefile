@@ -1,3 +1,5 @@
+all: start
+
 start:
 	@bin/docker/start.sh
 
