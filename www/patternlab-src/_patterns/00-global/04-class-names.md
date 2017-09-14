@@ -1,0 +1,1 @@
+Class prefixes and suffixes should be used to designate functionality, scope, helpers, breakpoints, etc. Here is a really great article on [BEMIT](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/), which is a similar naming convention.

@@ -1,0 +1,67 @@
+{
+  "name": "grizzly-wp",
+  "version": "1.0.0-beta.1",
+  "description": "Grizzly's WordPress Framework",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register src/scripts/tests/unit-tests"
+  },
+  "repository": "bitbucket:madebygrizzly/grizzly-wp",
+  "author": "Grizzly <hello@madebygrizzly.com> (https://madebygrizzly.com)",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://bitbucket.org/madebygrizzly/grizzly-wp/issues"
+  },
+  "homepage": "https://bitbucket.org/madebygrizzly/grizzly-wp",
+  "engines": {
+    "node": ">=6.1.0 <7.0.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "jquery": "1.12.4",
+    "lodash": "~4.17.4"
+  },
+  "devDependencies": {
+    "babel-core": "~6.24.1",
+    "babel-eslint": "~7.2.3",
+    "babel-loader": "~7.0.0",
+    "babel-polyfill": "~6.23.0",
+    "babel-preset-es2015": "~6.24.1",
+    "browser-sync": "~2.18.8",
+    "chai": "~3.5.0",
+    "del": "~2.2.2",
+    "eslint": "~3.19.0",
+    "eslint-plugin-import": "~1.16.0",
+    "gulp": "~3.9.1",
+    "gulp-autoprefixer": "~3.1.1",
+    "gulp-babel": "~6.1.2",
+    "gulp-babel-compile": "~0.0.3",
+    "gulp-cssnano": "~2.1.2",
+    "gulp-eslint": "~4.0.0",
+    "gulp-flatten": "~0.3.1",
+    "gulp-if": "~2.0.2",
+    "gulp-imagemin": "~3.2.0",
+    "gulp-load-plugins": "~1.5.0",
+    "gulp-newer": "~1.3.0",
+    "gulp-plumber": "~1.1.0",
+    "gulp-rev": "~3.0.0",
+    "gulp-sass": "~3.1.0",
+    "gulp-sourcemaps": "~2.4.1",
+    "gulp-watch": "~4.3.11",
+    "lazypipe": "~1.0.1",
+    "mocha": "~3.2.0",
+    "mocha-junit-reporter": "~1.13.0",
+    "patternlab-node": "~2.9.3",
+    "replace": "~0.3.0",
+    "require-dir": "~0.3.1",
+    "run-sequence": "~1.2.2",
+    "styleguidekit-assets-default": "~3.4.0",
+    "styleguidekit-mustache-default": "~3.1.0",
+    "uglifyjs-webpack-plugin": "~0.4.3",
+    "webpack": "~3.0.0",
+    "webpack-stream": "~3.2.0"
+  }
+}

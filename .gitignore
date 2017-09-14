@@ -1,0 +1,52 @@
+#### System Files ####
+.DS_Store
+
+
+#### Editor Files ####
+.ftpconfig
+.vscode
+
+
+#### Secrets ####
+keys/*
+!keys/.gitkeep
+
+
+#### Dependencies ####
+node_modules
+
+
+#### Pattern Lab ####
+patternlab
+
+
+#### Public ####
+www/html/*
+
+
+#### WordPress ####
+!www/html/wp-content
+www/html/wp-content/*
+!www/html/wp-content/index.php
+
+
+#### WordPress Plugins ####
+!www/html/wp-content/plugins
+www/html/wp-content/plugins/*
+!www/html/wp-content/plugins/index.php
+
+
+#### WordPress Themes ####
+!www/html/wp-content/themes
+www/html/wp-content/themes/*
+!www/html/wp-content/themes/index.php
+
+
+#### Plugin ####
+!www/html/wp-content/plugins/awp-demo
+www/html/wp-content/plugins/awp-demo/vendor
+
+
+#### Theme ####
+!www/html/wp-content/themes/awp-demo
+www/html/wp-content/themes/awp-demo/dist

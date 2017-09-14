@@ -1,0 +1,9 @@
+<footer role="contentinfo">
+  <p>{{ footer.copyright }}</p>
+</footer>
+
+{{ function('wp_footer') }}
+
+{% block footer %}
+  {# Additional footer content #}
+{% endblock %}

@@ -1,0 +1,21 @@
+{
+  "name": "grizzly/awp-demo",
+  "version": "1.0.0-beta.1",
+  "license": "GPL-2.0",
+  "description": "The AWP Demo Plugin",
+  "authors": [
+    {
+      "name": "Grizzly",
+      "email": "hello@madebygrizzly.com",
+      "homepage": "https://madebygrizzly.com"
+    }
+  ],
+  "require": {
+    "timber/timber": "~1.4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "AwpDemo\\": "./"
+    }
+  }
+}

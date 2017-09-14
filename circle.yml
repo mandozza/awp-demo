@@ -1,0 +1,29 @@
+machine:
+  php:
+    version: 7.1.0
+  node:
+    version: 6.1.0
+  hosts:
+    example.com: 127.0.0.1
+dependencies:
+  pre:
+    - sudo apt-get update; sudo apt-get install subversion
+  override:
+    - ./bin/deploy/install.sh
+test:
+  override:
+    - phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml:
+        pwd: www
+    - mocha --compilers js:babel-core/register src/scripts/tests/unit-tests --reporter mocha-junit-reporter:
+        pwd: www
+        environment:
+          MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
+compile:
+  override:
+    - gulp --production:
+        pwd: www
+deployment:
+  staging:
+    branch: staging
+    commands:
+      - ./bin/deploy/staging/deploy-code.sh
